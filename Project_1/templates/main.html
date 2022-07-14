@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}home page{% endblock %}
+
+{% block body %}
+<main>
+    <p class="fs-4">In the field below, you must enter the image data in base64 format.
+        To get the result, click the get result button.
+    </p>
+    <form method="post">
+        <textarea name="img" class="form-control"></textarea>
+        <input type="submit" class="btn btn-success" value="Get the result">
+    </form>
+</main>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}result page{% endblock %}
+
+{% block body %}
+<main>
+    <p class="fs-4">Number of people = {{ kolvo_faces }}</p>
+    <img src="{{ url_for('static', filename='images/p1.jpg') }}" alt="people">
+</main>
+{% endblock %}
